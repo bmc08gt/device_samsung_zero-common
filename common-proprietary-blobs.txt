@@ -1,6 +1,20 @@
 # Audio
 vendor/firmware/seiren_fw_dram.bin
 vendor/firmware/seiren_fw_sram.bin
+lib/libaudio-ril.so
+lib/libcontrolcsc.so
+lib64/libcontrolcsc.so
+lib/lib_DNSe_EP_ver216b.so
+lib/lib_DNSe_NRSS_ver230.so
+lib/lib_Samsung_Resampler.so
+lib/lib_SamsungRec_V04012_WNR002.so
+lib/libsamsungearcare.so
+lib/libsamsungRecord.so
+lib/libsamsungRecord_ns.so
+lib/libsamsungSoundbooster_ext.so
+lib/libsamsungSoundbooster_pgb.so
+lib/libtinyalsa.so
+lib64/libtinyalsa.so
 
 # Bluetooth
 vendor/firmware/bcm4358A0_V0009.0033.hcd
@@ -11,22 +25,50 @@ lib/hw/camera.exynos5.so
 lib64/hw/camera.exynos5.so
 lib/hw/camera.universal7420.so
 lib64/hw/camera.universal7420.so
+lib/libcsc.so
+lib64/libcsc.so
+lib/libexynoscamera3.so
+lib64/libexynoscamera3.so
+lib/libexynoscamera.so
+lib64/libexynoscamera.so
+lib/libexynosutils.so
+lib64/libexynosutils.so
+lib/libexynosv4l2.so
+lib64/libexynosv4l2.so
 
 # Consumer IR
 lib/hw/consumerir.exynos5.so
 lib64/hw/consumerir.exynos5.so
 
 # Graphics
-vendor/lib/egl/libGLES_mali.so
-vendor/lib64/egl/libGLES_mali.so
+lib/egl/libGLES_android.so
+lib/libGLES_trace.so
+lib64/libGLES_trace.so
+lib/libGLESv1_CM.so
+lib64/libGLESv1_CM.so
+lib/libGLESv3.so
+lib64/libGLESv3.so
+vendor/lib/liblvverx_3.27.02.so
+vendor/lib/liblvvetx_3.27.02.so
+vendor/lib/libOpenCL.so
+vendor/lib64/libOpenCL.so
 
 # GPS
+bin/gps.cer
+bin/gpsd
+lib64/hw/gps.default.so
+lib/libwrappergps.so
+lib64/libwrappergps.so
 
 # HWC
 lib/hw/gralloc.exynos5.so
 lib64/hw/gralloc.exynos5.so
 lib/hw/hwcomposer.exynos5.so
 lib64/hw/hwcomposer.exynos5.so
+lib/libExynosHWCService.so
+lib64/libExynosHWCService.so
+lib/libfimg.so
+lib64/libfimg.so
 
 # LPM
 bin/lpm
@@ -38,6 +80,12 @@ vendor/firmware/fimc_is_fw2_imx240.bin
 vendor/firmware/mfc_fw.bin
 vendor/firmware/setfile_4e6.bin
 vendor/firmware/setfile_imx240.bin
+
+# Memory
+lib/libion.so
+lib64/libion.so
+lib/libion_exynos.so
+lib64/libion_exynos.so
 
 # Mobicore
 app/mcRegistry/00060308060501020000000000000000.tlbin:vendor/firmware/mcRegistry/00060308060501020000000000000000.tlbin
