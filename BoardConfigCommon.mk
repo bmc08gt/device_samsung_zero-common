@@ -28,7 +28,7 @@ COMMON_GLOBAL_CFLAGS += -DSAMSUNG_CAMERA_HARDWARE
 BOARD_USES_HWCOMPOSER := true
 
 # Kernel
-BOARD_KERNEL_CMDLINE := console=ram ehci_hcd.park=3
+BOARD_KERNEL_CMDLINE := console=ram ehci_hcd.park=3 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --second_offset 0x10f00000 --tags_offset 0x00000100
 BOARD_KERNEL_PAGESIZE := 2048
