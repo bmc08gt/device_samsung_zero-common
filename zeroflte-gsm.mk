@@ -91,9 +91,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
 
-#common build.props
+# common build.props
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=640 \
+    ro.sf.lcd_density=480 \
     ro.opengles.version=196609 \
     ro.chipname=exynos7420 \
     ro.ril.hsxpa=1 \
