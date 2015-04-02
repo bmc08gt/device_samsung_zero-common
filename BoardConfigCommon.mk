@@ -27,6 +27,9 @@ COMMON_GLOBAL_CFLAGS += -DSAMSUNG_CAMERA_HARDWARE
 # HWComposer
 BOARD_USES_HWCOMPOSER := true
 
+# Disable initlogo, Samsungs framebuffer is weird
+TARGET_NO_INITLOGO := true
+
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ram ehci_hcd.park=3 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x10000000
