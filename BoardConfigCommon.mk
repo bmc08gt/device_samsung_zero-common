@@ -1,5 +1,7 @@
 LOCAL_PATH := device/samsung/zeroflte-gsm
 
+BOARD_VENDOR := samsung
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
