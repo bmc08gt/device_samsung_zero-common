@@ -11,7 +11,6 @@ on init
     mkdir /preload 0771 system system
 
     # See storage config details at http://source.android.com/tech/storage/
-    mkdir /mnt/media_rw/extSdCard 0700 media_rw media_rw
     mkdir /mnt/media_rw/UsbDriveA 0700 media_rw media_rw
     mkdir /mnt/media_rw/UsbDriveB 0700 media_rw media_rw
     mkdir /mnt/media_rw/UsbDriveC 0700 media_rw media_rw
@@ -34,7 +33,6 @@ on init
     symlink /mnt/shell/emulated/0 /storage/emulated/legacy
 
     # map "real" external storages paths also in same way. backwards compatibility.
-    symlink /storage/extSdCard /mnt/extSdCard
     symlink /storage/UsbDriveA /mnt/UsbDriveA
     symlink /storage/UsbDriveB /mnt/UsbDriveB
     symlink /storage/UsbDriveC /mnt/UsbDriveC
@@ -42,9 +40,6 @@ on init
     symlink /storage/UsbDriveE /mnt/UsbDriveE
     symlink /storage/UsbDriveF /mnt/UsbDriveF
 
-    #export SECONDARY_STORAGE /storage/extSdCard
-
-    mkdir /storage/extSdCard 0700 root root
     mkdir /storage/UsbDriveA 0700 root root
     mkdir /storage/UsbDriveB 0700 root root
     mkdir /storage/UsbDriveC 0700 root root
@@ -754,11 +749,6 @@ service mobicore /system/bin/mcDriverDaemon -r /system/app/FFFFFFFF0000000000000
 # virtual sdcard daemon running as media_rw (1023)
 service sdcard /system/bin/sdcard -u 1023 -g 1023 -l -r /data/media /mnt/shell/emulated
     class late_start
-    oneshot
-
-service fuse_extSdCard /system/bin/sdcard -u 1023 -g 1023 -w 1023 -d -f /mnt/media_rw/extSdCard /storage/extSdCard
-    class late_start
-    disabled
     oneshot
 
 service fuse_UsbDriveA /system/bin/sdcard -u 1023 -g 1023 -d -f /mnt/media_rw/UsbDriveA /storage/UsbDriveA
