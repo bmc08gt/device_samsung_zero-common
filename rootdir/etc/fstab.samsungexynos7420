@@ -4,19 +4,14 @@
 # data partition must be located at the bottom for supporting device encryption
 
 #<src>                                                                 <mnt_point>         <type>    <mnt_flags and options>                                                                         <fs_mgr_flags>
-/dev/block/platform/15570000.ufs/by-name/BOOT                          /boot               emmc      default                                                                                         defaults
-/dev/block/platform/15570000.ufs/by-name/RECOVERY                      /recovery           emmc      default                                                                                         defaults
+/dev/block/platform/15570000.ufs/by-name/BOOT                          /boot               emmc      defaults                                                                                        defaults
+/dev/block/platform/15570000.ufs/by-name/RECOVERY                      /recovery           emmc      defaults                                                                                        defaults
 /dev/block/platform/15570000.ufs/by-name/SYSTEM                        /system             ext4      ro,errors=panic,noload                                                                          wait,support_scfs,verify
 /dev/block/platform/15570000.ufs/by-name/EFS                           /efs                ext4      noatime,nosuid,nodev,noauto_da_alloc,discard,journal_async_commit,data=ordered,errors=panic     wait,check
 /dev/block/platform/15570000.ufs/by-name/CACHE                         /cache              ext4      noatime,nosuid,nodev,noauto_da_alloc,discard,journal_async_commit,data=ordered,errors=panic     wait,check
 /dev/block/platform/15570000.ufs/by-name/USERDATA                      /data               ext4      noatime,nosuid,nodev,noauto_da_alloc,discard,journal_async_commit,data=ordered,errors=panic     wait,check,encryptable=footer,length=-16384
-/dev/block/platform/15570000.ufs/by-name/RADIO                         /modem              emmc      default                                                                                         defaults
-/dev/block/platform/15570000.ufs/by-name/SBFS                          /sbfs               ext4      default                                                                                         defaults
+/dev/block/platform/15570000.ufs/by-name/RADIO                         /modem              emmc      defaults                                                                                        defaults
+/dev/block/platform/15570000.ufs/by-name/SBFS                          /sbfs               ext4      defaults                                                                                        defaults
 
 # VOLD
-/devices/15400000.usb/15400000.dwc3/xhci-hcd.2.auto/usb*sda            auto                vfat      default                                                                                         voldmanaged=UsbDriveA:auto
-/devices/15400000.usb/15400000.dwc3/xhci-hcd.2.auto/usb*sdb            auto                vfat      default                                                                                         voldmanaged=UsbDriveB:auto
-/devices/15400000.usb/15400000.dwc3/xhci-hcd.2.auto/usb*sdc            auto                vfat      default                                                                                         voldmanaged=UsbDriveC:auto
-/devices/15400000.usb/15400000.dwc3/xhci-hcd.2.auto/usb*sdd            auto                vfat      default                                                                                         voldmanaged=UsbDriveD:auto
-/devices/15400000.usb/15400000.dwc3/xhci-hcd.2.auto/usb*sde            auto                vfat      default                                                                                         voldmanaged=UsbDriveE:auto
-/devices/15400000.usb/15400000.dwc3/xhci-hcd.2.auto/usb*sdf            auto                vfat      default                                                                                         voldmanaged=UsbDriveF:auto
+/devices/15400000.usb/15400000.dwc3/xhci-hcd.2.auto/usb*               auto                auto      defaults                                                                                        voldmanaged=usbdisk:auto
