@@ -2,8 +2,6 @@ import init.samsungexynos7420.usb.rc
 import init.wifi.rc
 import init.baseband.rc
 import init.carrier.rc
-import init.fac.rc
-import init.zeroflte_fac.rc
 
 on early-init
     mount debugfs /sys/kernel/debug /sys/kernel/debug
