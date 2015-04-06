@@ -42,16 +42,11 @@ lib64/hw/consumerir.exynos5.so
 
 # Graphics
 lib/egl/libGLES_android.so
-lib/libGLES_trace.so
-lib64/libGLES_trace.so
-lib/libGLESv1_CM.so
-lib64/libGLESv1_CM.so
-lib/libGLESv3.so
-lib64/libGLESv3.so
+lib64/egl/libGLES_android.so
 vendor/lib/liblvverx_3.27.02.so
 vendor/lib/liblvvetx_3.27.02.so
-vendor/lib/libOpenCL.so
-vendor/lib64/libOpenCL.so
+vendor/lib/egl/libGLES_mali.so
+vendor/lib64/egl/libGLES_mali.so
 
 # GPS
 bin/gps.cer
