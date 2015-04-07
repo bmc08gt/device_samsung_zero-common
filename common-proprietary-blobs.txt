@@ -64,6 +64,8 @@ lib/libExynosHWCService.so
 lib64/libExynosHWCService.so
 lib/libfimg.so
 lib64/libfimg.so
+lib/libexynosscaler.so
+lib64/libexynosscaler.so
 
 # LPM
 bin/lpm
