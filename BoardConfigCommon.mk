@@ -68,6 +68,10 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_MISC_PARTITION := true
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.samsungexynos7420
 
+# Renderscript
+BOARD_OVERRIDE_RS_CPU_VARIANT_32 := cortex-a15
+BOARD_OVERRIDE_RS_CPU_VARIANT_64 := cortex-a57
+
 # Twrp
 -include device/samsung/zeroflte-gsm/twrp.mk
 
