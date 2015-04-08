@@ -66,6 +66,14 @@ lib/libfimg.so
 lib64/libfimg.so
 lib/libexynosscaler.so
 lib64/libexynosscaler.so
+lib/libexynosgscaler.so
+lib64/libexynosgscaler.so
+lib/libhdmi.so
+lib64/libhdmi.so
+lib/libhdmimodule.so
+lib64/libhdmimodule.so
+lib/libhwcutils.so
+lib64/libhwcutils.so
 
 # LPM
 bin/lpm
