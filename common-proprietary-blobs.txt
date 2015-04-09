@@ -41,8 +41,6 @@ lib/hw/consumerir.exynos5.so
 lib64/hw/consumerir.exynos5.so
 
 # Graphics
-lib/egl/libGLES_android.so
-lib64/egl/libGLES_android.so
 vendor/lib/liblvverx_3.27.02.so
 vendor/lib/liblvvetx_3.27.02.so
 vendor/lib/egl/libGLES_mali.so
