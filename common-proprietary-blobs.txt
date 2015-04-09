@@ -74,6 +74,10 @@ lib/libhdmimodule.so
 lib64/libhdmimodule.so
 lib/libhwcutils.so
 lib64/libhwcutils.so
+lib/libvirtualdisplay.so
+lib64/libvirtualdisplay.so
+lib/libvirtualdisplaymodule.so
+lib64/libvirtualdisplaymodule.so
 
 # LPM
 bin/lpm
