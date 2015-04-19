@@ -7,6 +7,8 @@ $(call inherit-product-if-exists, vendor/samsung/zeroflte-gsm/zeroflte-gsm-vendo
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+PRODUCT_CHARACTERISTICS := nosdcard
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xxhdpi xxxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
