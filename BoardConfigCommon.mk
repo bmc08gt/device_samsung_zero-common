@@ -1,4 +1,4 @@
-LOCAL_PATH := device/samsung/zeroflte-gsm
+LOCAL_PATH := device/samsung/zeroflte-common
 
 BOARD_VENDOR := samsung
 
@@ -36,14 +36,15 @@ TARGET_NO_INITLOGO := true
 # Kernel
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
 KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
-#TARGET_KERNEL_SOURCE := kernel/samsung/exynos7420
+TARGET_KERNEL_SOURCE := kernel/samsung/exynos7420
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_HEADER_ARCH := arm64
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_CMDLINE := console=ram ehci_hcd.park=3 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x10000000
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --second_offset 0x10f00000 --tags_offset 0x00000100
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --second_offset 0x10f00000 --tags_offset 0x00000100 --dt $(LOCAL_PATH)/dt.img
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_KERNEL_SEPARATED_DT := true
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
+#TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
 
 # Malloc
 MALLOC_IMPL := dlmalloc
@@ -78,7 +79,7 @@ BOARD_OVERRIDE_RS_CPU_VARIANT_32 := cortex-a15
 BOARD_OVERRIDE_RS_CPU_VARIANT_64 := cortex-a57
 
 # Twrp
--include device/samsung/zeroflte-gsm/twrp.mk
+-include device/samsung/zeroflte-common/twrp.mk
 
 # inherit from the proprietary version
--include vendor/samsung/zeroflte-gsm/BoardConfigVendor.mk
+-include vendor/samsung/zeroflte-common/BoardConfigVendor.mk

@@ -1,9 +1,9 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-LOCAL_PATH := device/samsung/zeroflte-gsm
+LOCAL_PATH := device/samsung/zeroflte-common
 
 # Include non opensource parts
-$(call inherit-product-if-exists, vendor/samsung/zeroflte-gsm/zeroflte-gsm-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/zeroflte-common/zeroflte-common-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
@@ -23,15 +23,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.xml:system/etc/gps.xml
 
 # Kernel
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-    LOCAL_KERNEL := $(LOCAL_PATH)/kernel
-else
-    LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
+#ifeq ($(TARGET_PREBUILT_KERNEL),)
+#    LOCAL_KERNEL := $(LOCAL_PATH)/kernel
+#else
+#    LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+#endif
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel \
-    $(LOCAL_PATH)/dt.img:dt.img
 
 # Media profile
 PRODUCT_COPY_FILES += \

@@ -101,16 +101,16 @@ extract()
 done
 }
 
-BASE=../../../vendor/$VENDOR/zeroflte-gsm/proprietary
+BASE=../../../vendor/$VENDOR/zeroflte-common/proprietary
 rm -rf $BASE/*
 
 DEVBASE=../../../vendor/$VENDOR/$DEVICE/proprietary
 rm -rf $DEVBASE/*
 
-extract ../../$VENDOR/zeroflte-gsm/common-proprietary-blobs.txt $BASE
+extract ../../$VENDOR/zeroflte-common/common-proprietary-blobs.txt $BASE
 extract ../../$VENDOR/$DEVICE/device-proprietary-blobs.txt $DEVBASE
 
 echo $(pwd)
 
-./../zeroflte-gsm/setup-makefiles.sh
+./../zeroflte-common/setup-makefiles.sh
 
