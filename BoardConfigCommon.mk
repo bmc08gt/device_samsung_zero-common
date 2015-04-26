@@ -42,9 +42,10 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_CMDLINE := console=ram ehci_hcd.park=3 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x10000000
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --second_offset 0x10f00000 --tags_offset 0x00000100 --dt $(LOCAL_PATH)/dt.img
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --second_offset 0x10f00000 --tags_offset 0x00000100
 BOARD_KERNEL_PAGESIZE := 2048
-#TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
+BOARD_KERNEL_SEPARATED_DT := true
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
 
 # Malloc
 MALLOC_IMPL := dlmalloc
