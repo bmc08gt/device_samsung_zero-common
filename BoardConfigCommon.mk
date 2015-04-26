@@ -66,6 +66,7 @@ USE_OPENGL_RENDERER := true
 
 # Platform
 TARGET_BOARD_PLATFORM := unknown
+TARGET_SOC := exynos7420
 
 # Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
