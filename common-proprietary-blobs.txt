@@ -95,6 +95,7 @@ lib/libion_exynos.so
 lib64/libion_exynos.so
 
 # Mobicore
+app/FFFFFFFF000000000000000000000001.drbin
 app/mcRegistry/00060308060501020000000000000000.tlbin:vendor/firmware/mcRegistry/00060308060501020000000000000000.tlbin
 app/mcRegistry/07010000000000000000000000000000.tlbin:vendor/firmware/mcRegistry/07010000000000000000000000000000.tlbin
 app/mcRegistry/07060000000000000000000000000000.tlbin:vendor/firmware/mcRegistry/07060000000000000000000000000000.tlbin
@@ -132,8 +133,6 @@ lib64/hw/power.exynos5.so
 # Radio
 lib/libreference-ril.so
 lib64/libreference-ril.so
-lib/libril.so
-lib64/libril.so
 lib/librilutils.so
 lib64/librilutils.so
 lib/libsec-ril.so
