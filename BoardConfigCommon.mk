@@ -81,7 +81,9 @@ BOARD_OVERRIDE_RS_CPU_VARIANT_32 := cortex-a15
 BOARD_OVERRIDE_RS_CPU_VARIANT_64 := cortex-a57
 
 # Twrp
+ifneq ($(strip $(wildcard $(TOP)/bootable/recovery/variables.h)),)
 -include device/samsung/zeroflte-common/twrp.mk
+endif
 
 # inherit from the proprietary version
 -include vendor/samsung/zeroflte-common/BoardConfigVendor.mk
