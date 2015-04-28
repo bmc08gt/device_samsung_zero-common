@@ -58,6 +58,12 @@ lib/hw/gralloc.exynos5.so
 lib64/hw/gralloc.exynos5.so
 lib/hw/hwcomposer.exynos5.so
 lib64/hw/hwcomposer.exynos5.so
+lib/libcec.so
+lib64/libcec.so
+lib/libdisplay.so
+lib64/libdisplay.so
+lib/libdisplaymodule.so
+lib64/libdisplaymodule.so
 lib/libExynosHWCService.so
 lib64/libExynosHWCService.so
 lib/libfimg.so
