@@ -32,9 +32,6 @@ WITH_DEXPREOPT := true
 # HWComposer
 BOARD_USES_HWCOMPOSER := true
 
-# Disable initlogo, Samsungs framebuffer is weird
-TARGET_NO_INITLOGO := true
-
 # Kernel
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
 KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
