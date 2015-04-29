@@ -78,6 +78,8 @@ lib/libhdmimodule.so
 lib64/libhdmimodule.so
 lib/libhwcutils.so
 lib64/libhwcutils.so
+lib/libhwcutilsmodule.so
+lib64/libhwcutilsmodule.so
 lib/libvirtualdisplay.so
 lib64/libvirtualdisplay.so
 lib/libvirtualdisplaymodule.so
