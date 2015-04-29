@@ -78,6 +78,9 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_OVERRIDE_RS_CPU_VARIANT_32 := cortex-a15
 BOARD_OVERRIDE_RS_CPU_VARIANT_64 := cortex-a57
 
+# SurfaceFlinger
+BOARD_USES_SYNC_MODE_FOR_MEDIA := true
+
 # Twrp
 ifneq ($(strip $(wildcard $(TOP)/bootable/recovery/variables.h)),)
 -include device/samsung/zeroflte-common/twrp.mk
