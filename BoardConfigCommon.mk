@@ -51,6 +51,19 @@ MALLOC_IMPL := dlmalloc
 # NFC
 BOARD_NFC_HAL_SUFFIX := universal7420
 
+# OpenGL
+USE_OPENGL_RENDERER := true
+
+# Shader cache config options
+# Maximum size of the  GLES Shaders that can be cached for reuse.
+# Increase the size if shaders of size greater than 12KB are used.
+MAX_EGL_CACHE_KEY_SIZE := 12*1024
+
+# Maximum GLES shader cache size for each app to store the compiled shader
+# binaries. Decrease the size if RAM or Flash Storage size is a limitation
+# of the device.
+MAX_EGL_CACHE_SIZE := 2048*1024
+
 # Partitions
 TARGET_USERIMAGES_USE_EXt4 := true
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -58,9 +71,6 @@ BOARD_BOOTIMAGE_PARTITION_SIZE := 0x1c00000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x2200000
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0xf5000000
 #BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x65f800000
-
-# OpenGL
-USE_OPENGL_RENDERER := true
 
 # Platform
 TARGET_BOARD_PLATFORM := unknown
