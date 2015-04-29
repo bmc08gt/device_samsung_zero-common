@@ -131,6 +131,7 @@ app/mcRegistry/ffffffffd00000000000000000000016.tlbin
 app/mcRegistry/ffffffffd00000000000000000000017.tlbin
 app/mcRegistry/fffffffff0000000000000000000001b.tlbin
 app/mcRegistry/fffffffff0000000000000000000001e.tlbin
+bin/cs
 
 # Power
 lib/hw/power.exynos5.so
