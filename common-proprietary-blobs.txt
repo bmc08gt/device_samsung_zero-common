@@ -144,8 +144,6 @@ lib/libreference-ril.so
 lib64/libreference-ril.so
 lib/librilutils.so
 lib64/librilutils.so
-lib/libsec-ril.so
-lib64/libsec-ril.so
 lib/libsecnativefeature.so
 lib64/libsecnativefeature.so
 lib/libsecril-client.so
