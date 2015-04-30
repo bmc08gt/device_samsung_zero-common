@@ -110,7 +110,5 @@ rm -rf $DEVBASE/*
 extract ../../$VENDOR/zeroflte-common/common-proprietary-blobs.txt $BASE
 extract ../../$VENDOR/$DEVICE/device-proprietary-blobs.txt $DEVBASE
 
-echo $(pwd)
-
 ./../zeroflte-common/setup-makefiles.sh
 
