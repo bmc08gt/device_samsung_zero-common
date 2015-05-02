@@ -80,6 +80,8 @@ lib/libhwcutils.so
 lib64/libhwcutils.so
 lib/libhwcutilsmodule.so
 lib64/libhwcutilsmodule.so
+lib/libmpp.so
+lib64/libmpp.so
 lib/libvirtualdisplay.so
 lib64/libvirtualdisplay.so
 lib/libvirtualdisplaymodule.so
