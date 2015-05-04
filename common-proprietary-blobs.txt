@@ -35,6 +35,12 @@ lib/libexynosutils.so
 lib64/libexynosutils.so
 lib/libexynosv4l2.so
 lib64/libexynosv4l2.so
+lib/libhwjpeg.so
+lib64/libhwjpeg.so
+lib/libsensorlistener.so
+lib64/libsensorlistener.so
+lib/libuniplugin.so
+lib64/libuniplugin.so
 
 # Consumer IR
 lib/hw/consumerir.exynos5.so
