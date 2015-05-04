@@ -37,7 +37,6 @@ KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aa
 KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_SOURCE := kernel/samsung/exynos7420
 BOARD_KERNEL_IMAGE_NAME := Image
-BOARD_KERNEL_CMDLINE := console=ram ehci_hcd.park=3 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --second_offset 0x10f00000 --tags_offset 0x00000100
 BOARD_KERNEL_PAGESIZE := 2048
