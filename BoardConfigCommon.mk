@@ -1,5 +1,7 @@
 LOCAL_PATH := device/samsung/zeroflte-common
 
+TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
+
 BOARD_VENDOR := samsung
 
 # Architecture
