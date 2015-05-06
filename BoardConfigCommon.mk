@@ -31,6 +31,9 @@ ART_USE_HSPACE_COMPACTION := true
 # Dexpreopt
 WITH_DEXPREOPT := true
 
+# Include an expanded selection of fonts
+EXTENDED_FONT_FOOTPRINT := true
+
 # HWComposer
 BOARD_USES_HWCOMPOSER := true
 
