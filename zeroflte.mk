@@ -100,7 +100,6 @@ PRODUCT_PACKAGES += \
     init.samsungexynos7420.rc \
     init.samsungexynos7420.usb.rc \
     init.wifi.rc \
-    init.zygote64_32.rc \
     ueventd.samsungexynos7420.rc
 
 # Torch
