@@ -15,4 +15,4 @@ TW_DISABLE_TTF := true
 TW_EXCLUDE_SUPERSU := true
 TW_SCREEN_BLANK_ON_BOOT := true
 
-PRODUCT_COPY_FILES += device/samsung/zeroflte-common/rootdir/etc/twrp.fstab:recovery/root/etc/twrp.fstab
+PRODUCT_COPY_FILES += device/samsung/zero-common/rootdir/etc/twrp.fstab:recovery/root/etc/twrp.fstab

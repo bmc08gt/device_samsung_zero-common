@@ -1,4 +1,4 @@
-LOCAL_PATH := device/samsung/zeroflte-common
+LOCAL_PATH := device/samsung/zero-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
@@ -109,8 +109,8 @@ USE_MINIKIN := true
 
 # Twrp
 ifneq ($(strip $(wildcard $(TOP)/bootable/recovery/variables.h)),)
--include device/samsung/zeroflte-common/twrp.mk
+-include device/samsung/zero-common/twrp.mk
 endif
 
 # inherit from the proprietary version
--include vendor/samsung/zeroflte-common/BoardConfigVendor.mk
+-include vendor/samsung/zero-common/BoardConfigVendor.mk

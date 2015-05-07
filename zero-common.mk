@@ -1,9 +1,9 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-LOCAL_PATH := device/samsung/zeroflte-common
+LOCAL_PATH := device/samsung/zero-common
 
 # Include non opensource parts
-$(call inherit-product-if-exists, vendor/samsung/zeroflte-common/zeroflte-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/zero-common/zero-common-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
