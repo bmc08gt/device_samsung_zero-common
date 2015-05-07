@@ -165,6 +165,8 @@ lib64/hw/sensors.universal7420.so
 vendor/lib/libwvdrm_L1.so
 vendor/lib/libwvm.so
 vendor/lib/libWVStreamControlAPI_L1.so
+lib/libMcClient.so
+lib64/libMcClient.so
 
 # Wifi
 etc/wifi/bcmdhd_apsta.bin
