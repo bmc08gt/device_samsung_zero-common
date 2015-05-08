@@ -1,6 +1,7 @@
 # Audio
 vendor/firmware/seiren_fw_dram.bin
 vendor/firmware/seiren_fw_sram.bin
+lib/hw/audio.primary.universal7420.so
 lib/libaudio-ril.so
 lib/libcontrolcsc.so
 lib64/libcontrolcsc.so
