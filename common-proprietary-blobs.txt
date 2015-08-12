@@ -144,6 +144,34 @@ app/mcRegistry/fffffffff0000000000000000000001b.tlbin
 app/mcRegistry/fffffffff0000000000000000000001e.tlbin
 bin/cs
 
+# OMX
+lib/omx/libOMX.Exynos.AAC.Decoder.so
+lib/omx/libOMX.Exynos.VP9.Decoder.so
+lib/omx/libOMX.Exynos.MP3.Decoder.so
+lib/omx/libOMX.Exynos.AVC.Decoder.so
+lib/omx/libOMX.Exynos.VP8.Encoder.so
+lib/omx/libOMX.Exynos.VP8.Decoder.so
+lib/omx/libOMX.Exynos.FLAC.Decoder.so
+lib/omx/libOMX.Exynos.AVC.Encoder.so
+lib/omx/libOMX.Exynos.HEVC.Encoder.so
+lib/omx/libOMX.Exynos.MPEG4.Encoder.so
+lib/omx/libOMX.Exynos.WMV.Decoder.so
+lib/omx/libOMX.Exynos.MPEG4.Decoder.so
+lib/omx/libOMX.Exynos.HEVC.Decoder.so
+lib64/omx/libOMX.Exynos.AAC.Decoder.so
+lib64/omx/libOMX.Exynos.VP9.Decoder.so
+lib64/omx/libOMX.Exynos.MP3.Decoder.so
+lib64/omx/libOMX.Exynos.AVC.Decoder.so
+lib64/omx/libOMX.Exynos.VP8.Encoder.so
+lib64/omx/libOMX.Exynos.VP8.Decoder.so
+lib64/omx/libOMX.Exynos.FLAC.Decoder.so
+lib64/omx/libOMX.Exynos.AVC.Encoder.so
+lib64/omx/libOMX.Exynos.HEVC.Encoder.so
+lib64/omx/libOMX.Exynos.MPEG4.Encoder.so
+lib64/omx/libOMX.Exynos.WMV.Decoder.so
+lib64/omx/libOMX.Exynos.MPEG4.Decoder.so
+lib64/omx/libOMX.Exynos.HEVC.Decoder.so
+
 # Power
 lib/hw/power.exynos5.so
 lib64/hw/power.exynos5.so
