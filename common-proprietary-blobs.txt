@@ -32,10 +32,6 @@ lib/libexynoscamera3.so
 lib64/libexynoscamera3.so
 lib/libexynoscamera.so
 lib64/libexynoscamera.so
-lib/libexynosutils.so
-lib64/libexynosutils.so
-lib/libexynosv4l2.so
-lib64/libexynosv4l2.so
 lib/libhwjpeg.so
 lib64/libhwjpeg.so
 lib/libsensorlistener.so
@@ -59,40 +55,6 @@ bin/gpsd
 lib64/hw/gps.default.so
 lib/libwrappergps.so
 lib64/libwrappergps.so
-
-# HWC
-lib/hw/gralloc.exynos5.so
-lib64/hw/gralloc.exynos5.so
-lib/hw/hwcomposer.exynos5.so
-lib64/hw/hwcomposer.exynos5.so
-lib/libcec.so
-lib64/libcec.so
-lib/libdisplay.so
-lib64/libdisplay.so
-lib/libdisplaymodule.so
-lib64/libdisplaymodule.so
-lib/libExynosHWCService.so
-lib64/libExynosHWCService.so
-lib/libfimg.so
-lib64/libfimg.so
-lib/libexynosscaler.so
-lib64/libexynosscaler.so
-lib/libexynosgscaler.so
-lib64/libexynosgscaler.so
-lib/libhdmi.so
-lib64/libhdmi.so
-lib/libhdmimodule.so
-lib64/libhdmimodule.so
-lib/libhwcutils.so
-lib64/libhwcutils.so
-lib/libhwcutilsmodule.so
-lib64/libhwcutilsmodule.so
-lib/libmpp.so
-lib64/libmpp.so
-lib/libvirtualdisplay.so
-lib64/libvirtualdisplay.so
-lib/libvirtualdisplaymodule.so
-lib64/libvirtualdisplaymodule.so
 
 # LPM
 bin/lpm
@@ -194,8 +156,6 @@ lib64/hw/sensors.universal7420.so
 vendor/lib/libwvdrm_L1.so
 vendor/lib/libwvm.so
 vendor/lib/libWVStreamControlAPI_L1.so
-lib/libMcClient.so
-lib64/libMcClient.so
 
 # Wifi
 etc/wifi/bcmdhd_apsta.bin
