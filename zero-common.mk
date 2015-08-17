@@ -21,12 +21,19 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.r_submix.default \
-    audio.usb.default 
+    audio.usb.default
 
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/configs/gps.xml:system/etc/gps.xml
+
+# Graphics
+PRODUCT_PACKAGES += \
+    gralloc.exynos5 \
+    hwcomposer.exynos5 \
+    libcec \
+    libion_exynos
 
 # Media profile
 PRODUCT_COPY_FILES += \
@@ -39,6 +46,14 @@ PRODUCT_COPY_FILES += \
 # Misc
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
+
+# MobiCore
+PRODUCT_PACKAGES += \
+    libMcClient \
+    libMcRegistry \
+    libgdmcprov \
+    mcDriverDaemon
+
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -54,13 +69,15 @@ NFCEE_ACCESS_PATH := $(LOCAL_PATH)/nfc/nfcee_access.xml
 PRODUCT_COPY_FILES += \
     $(NFCEE_ACCESS_PATH):system/etc/nfcee_access.xml
 
+
 # OMX
 PRODUCT_PACKAGES += \
     libExynosOMX_Core \
-    libOMX.Exynos.MPEG4.Decoder \
     libOMX.Exynos.AVC.Decoder \
-    libOMX.Exynos.MPEG4.Encoder \
+    libOMX.Exynos.MPEG2.Decoder \
+    libOMX.Exynos.MPEG4.Decoder \
     libOMX.Exynos.AVC.Encoder \
+    libOMX.Exynos.MPEG4.Encoder \
     libstagefrighthw
 
 # Permissions
@@ -134,3 +151,6 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxxhdpi-3072-dal
 
 # call hwui memory config
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxxhdpi-3072-hwui-memory.mk)
+
+# call Samsung LSI board support package
+$(call inherit-product, hardware/samsung_slsi-cm/exynos7420/exynos7420.mk)
