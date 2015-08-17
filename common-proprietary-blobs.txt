@@ -32,8 +32,6 @@ lib/libexynoscamera3.so
 lib64/libexynoscamera3.so
 lib/libexynoscamera.so
 lib64/libexynoscamera.so
-lib/libhwjpeg.so
-lib64/libhwjpeg.so
 lib/libsensorlistener.so
 lib64/libsensorlistener.so
 lib/libuniplugin.so
