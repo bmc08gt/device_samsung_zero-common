@@ -43,8 +43,12 @@ WITH_DEXPREOPT := true
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
 
+# HDMI - set incapable for now
+BOARD_HDMI_INCAPABLE := true
+
 # HWComposer
 BOARD_USES_HWCOMPOSER := true
+BOARD_USES_SCALER := true
 
 # Kernel
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
@@ -86,7 +90,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4110417920
 
 # Platform
 TARGET_BOARD_PLATFORM := exynos5
-TARGET_SLSI_VARIANT := blobs
+TARGET_SLSI_VARIANT := cm
 TARGET_SOC := exynos7420
 
 # Recovery
@@ -101,9 +105,6 @@ BOARD_HAS_DOWNLOAD_MODE := true
 # Renderscript
 BOARD_OVERRIDE_RS_CPU_VARIANT_32 := cortex-a15
 BOARD_OVERRIDE_RS_CPU_VARIANT_64 := cortex-a57
-
-# SurfaceFlinger
-BOARD_USES_SYNC_MODE_FOR_MEDIA := true
 
 # Enable Minikin text layout engine (will be the default soon)
 USE_MINIKIN := true
