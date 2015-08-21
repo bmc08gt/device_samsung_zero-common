@@ -33,7 +33,8 @@ PRODUCT_PACKAGES += \
     gralloc.exynos5 \
     hwcomposer.exynos5 \
     libcec \
-    libion_exynos
+    libion_exynos \
+    memtrack.exynos5
 
 # Media profile
 PRODUCT_COPY_FILES += \
