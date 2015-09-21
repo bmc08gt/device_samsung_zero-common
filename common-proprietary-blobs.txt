@@ -5,10 +5,7 @@ lib/hw/audio.primary.universal7420.so
 lib/libaudio-ril.so
 lib/libcontrolcsc.so
 lib64/libcontrolcsc.so
-lib/lib_DNSe_EP_ver216b.so
-lib/lib_DNSe_NRSS_ver230.so
 lib/lib_Samsung_Resampler.so
-lib/lib_SamsungRec_V04012_WNR002.so
 lib/libsamsungearcare.so
 lib/libsamsungRecord.so
 lib/libsamsungRecord_ns.so
@@ -26,8 +23,6 @@ lib/hw/camera.exynos5.so
 lib64/hw/camera.exynos5.so
 lib/hw/camera.universal7420.so
 lib64/hw/camera.universal7420.so
-lib/libcsc.so
-lib64/libcsc.so
 lib/libexynoscamera3.so
 lib64/libexynoscamera3.so
 lib/libexynoscamera.so
@@ -87,7 +82,6 @@ app/mcRegistry/ffffffff00000000000000000000000f.tlbin
 app/mcRegistry/ffffffff000000000000000000000012.tlbin
 app/mcRegistry/ffffffff000000000000000000000013.tlbin
 app/mcRegistry/ffffffff000000000000000000000014.tlbin
-app/mcRegistry/ffffffff000000000000000000000015.tlbin
 app/mcRegistry/ffffffff000000000000000000000016.tlbin
 app/mcRegistry/ffffffff000000000000000000000017.tlbin
 app/mcRegistry/ffffffff000000000000000000000018.tlbin
