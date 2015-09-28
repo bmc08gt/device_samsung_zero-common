@@ -6,11 +6,7 @@ lib/libaudio-ril.so
 lib/libcontrolcsc.so
 lib64/libcontrolcsc.so
 lib/lib_DNSe_EP_ver216b.so
-#not common on G920P
-#lib/lib_DNSe_NRSS_ver230.so
 lib/lib_Samsung_Resampler.so
-#Does not exist on G920P
-#lib/lib_SamsungRec_V04012_WNR002.so
 lib/libsamsungearcare.so
 lib/libsamsungRecord.so
 lib/libsamsungRecord_ns.so
@@ -50,9 +46,6 @@ vendor/lib/egl/libGLES_mali.so
 vendor/lib64/egl/libGLES_mali.so
 
 # GPS
-#does not exist on G920P
-#bin/gps.cer
-#bin/gpsd
 lib64/hw/gps.default.so
 lib/libwrappergps.so
 lib64/libwrappergps.so
@@ -90,8 +83,6 @@ app/mcRegistry/ffffffff00000000000000000000000f.tlbin
 app/mcRegistry/ffffffff000000000000000000000012.tlbin
 app/mcRegistry/ffffffff000000000000000000000013.tlbin
 app/mcRegistry/ffffffff000000000000000000000014.tlbin
-#Does not exist on G920P
-#app/mcRegistry/ffffffff000000000000000000000015.tlbin
 app/mcRegistry/ffffffff000000000000000000000016.tlbin
 app/mcRegistry/ffffffff000000000000000000000017.tlbin
 app/mcRegistry/ffffffff000000000000000000000018.tlbin
