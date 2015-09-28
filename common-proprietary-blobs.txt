@@ -43,9 +43,6 @@ vendor/lib/egl/libGLES_mali.so
 vendor/lib64/egl/libGLES_mali.so
 
 # GPS
-# These are not found in the SPR variant
-#bin/gps.cer
-#bin/gpsd
 lib64/hw/gps.default.so
 lib/libwrappergps.so
 lib64/libwrappergps.so
