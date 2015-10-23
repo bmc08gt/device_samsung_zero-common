@@ -14,4 +14,4 @@
 /dev/block/platform/15570000.ufs/by-name/SBFS                          /sbfs               ext4      defaults                                                                                        defaults
 
 # VOLD
-/devices/15400000.usb/15400000.dwc3/xhci-hcd.2.auto/usb*               auto                auto      defaults                                                                                        voldmanaged=usbdisk:auto
+/devices/15400000.usb/15400000.dwc3/xhci-hcd.2.auto/usb*               auto                auto      defaults                                                                                        voldmanaged=usb:auto
