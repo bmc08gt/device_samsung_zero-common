@@ -38,9 +38,6 @@ BOARD_USE_SAMSUNG_COLORFORMAT_NV21 := true
 # Compaction
 ART_USE_HSPACE_COMPACTION := true
 
-# Dexpreopt
-WITH_DEXPREOPT := true
-
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
 
